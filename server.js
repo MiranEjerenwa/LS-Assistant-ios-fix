@@ -533,8 +533,8 @@ app.post('/create-checkout-session', async (req, res) => {
 
 
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log("LS ASsistant is live on port " + ((process.env.PORT) ? process.env.PORT : 3000));
+app.listen(process.env.PORT || 80, function() {
+  console.log("LS ASsistant is live on port " + ((process.env.PORT) ? process.env.PORT : 80));
   // print("./")
 });
 
