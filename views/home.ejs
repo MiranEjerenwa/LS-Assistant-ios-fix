@@ -1,0 +1,44 @@
+<%- include("partials/header.ejs")%>
+
+
+  <main class="form-signin">
+    <form action="/fileUpload" method="post" enctype="multipart/form-data">
+      <!-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+      <h1 class="h3 mb-2 fw-normal">Upload Eli.CSV</h1>
+      <p><small>upload the exported manifest <i class="fas fa-question"></i> </small></p>
+        <label for="inputEmail" class="visually-hidden">Choose File</label>
+        <div class="form-group mb-3">
+        <input type="file" id="elicsv" name="elicsv" class="form-control" placeholder="elicsv" required autofocus>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Upload <i class="fas fa-file-upload"></i></button>
+      <p class="mt-5 mb-0 text-muted">&copy; LS Assistant <%= new Date().getFullYear() %> | built by  <a href="https://ejerenwaavis.github.io/cv/"> Avis </a> </p>
+
+    </form>
+
+    <p class="fixed-bottom text-muted">
+      By using this service you agree our
+    <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Usage Liability Policy
+    </a>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <p><b class="d-block">Liability Policy</b>
+        We do not take responsiblity for poorly created routes, which includes but not limited to: missing stops, missing appartment numbers e.t.c, which may arise from a poorly created manifest, manually editing a manifest after export and so on.
+        You are hereby required/expected to carefully inspect your manifiests/road warrior routes after it is created.
+      </p>
+    </div>
+  </div>
+  </main>
+
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
